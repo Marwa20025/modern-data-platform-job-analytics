@@ -23,7 +23,7 @@ def save_raw_data(jobs):
         "jobs": jobs
     }
 
-    with open("producer/data/jobs_raw.json", "w", encoding="utf-8") as file:
+    with open("data/raw/jobs_raw.json", "w", encoding="utf-8") as file:
         json.dump(output, file, indent=4, ensure_ascii=False)
 
 

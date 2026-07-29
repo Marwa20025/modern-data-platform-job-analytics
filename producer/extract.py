@@ -1,7 +1,7 @@
 import requests
 import json
 from datetime import datetime
-
+from config.logger import logger
 
 API_URL = "https://remotive.com/api/remote-jobs"
 
@@ -32,4 +32,4 @@ if __name__ == "__main__":
 
     save_raw_data(jobs)
 
-    print(f"{len(jobs)} offres sauvegardées dans jobs_raw.json")
+    logger.info(f"{len(data)} offres récupérées.")
